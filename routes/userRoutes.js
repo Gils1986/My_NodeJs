@@ -135,7 +135,7 @@ router.delete("/:id", authMW("isAdmin", "registeredUser"), async (req, res) => {
         .send(`User with id:${req.params.id} does not exist in the database `);
       return;
     }
-    res.send(`The deleted user: ${user.email}`);
+    res.send(user);
   } catch (error) {
     res.status(401).send("An error occurred, the user was not deleted.");
   }

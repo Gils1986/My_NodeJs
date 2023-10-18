@@ -25,7 +25,7 @@ const usersInitialData = [
     phone: "0507654321",
     email: "royC@gmail.com",
     password: "Ww123456",
-    isBusiness: true,
+    isBusiness: false,
     isAdmin: true,
     address: {
       state: "Unknown",

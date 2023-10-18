@@ -18,7 +18,6 @@ function authMW(...roles) {
         return;
       }
       if (roles.includes("isAdmin") && req.user.isAdmin) {
-        console.log(decode);
         next();
         return;
       }
